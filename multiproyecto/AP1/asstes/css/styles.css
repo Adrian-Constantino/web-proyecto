@@ -70,6 +70,11 @@ body {
     color: var(--color2);
 }
 
+#testimonios{
+    background-color: var(--color3);
+    color: var(--color5);
+}
+
 .contenedor {
     max-width: 75%;
     margin: auto;
