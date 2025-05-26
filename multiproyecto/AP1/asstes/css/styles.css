@@ -1,4 +1,3 @@
-
 /*Enlaze del CSS con la librería de iconos de font-awesome 6.7.2*/
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css');
 /* Importe al CSS de fuentes del repositorio de Google Fonts(Ubuntu,Space Grotesk) */
@@ -9,14 +8,17 @@
     /* Variables para tipografias */
     --fuente1: "Ubuntu", sans-serif;
     --fuente2: "Space Grotesk", sans-serif;
-     /* Variables para la paleta de colores */
+    /* Variables para la paleta de colores */
     --color1: #16f953;
     --color2: #fff;
-    --color3: #DAB49D;
+    --color3: #e2c4b1;
     --color4: #7e600b;
     --color5: #3D3D3D;
-    --color6: #09932b;
+    --color6: #356c43;
+    --color7: #e2cdbf;
+    --color8: #f6f2f2f3;
 }
+
 /* Selector universal de elementos */
 * {
     margin: 0;
@@ -25,14 +27,20 @@
     text-decoration: none;
     list-style: none;
 }
+
 /* Selectores de tipo HTML */
 
-html{
+html {
     /*suavizas la velocidad de desplazamiento del botón scroll*/
     scroll-behavior: smooth;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin-top: 1.5em;
     margin-bottom: 1.5em;
 }
@@ -55,15 +63,83 @@ body {
     line-height: 1.5em;
 }
 
-/* Selectores de tipo ID */
+table {
 
-#barra-superior {
-    background-color: var(--color5);
-    color: var(--color2);
-    padding-top: 10px;
-    padding-bottom: 10px;
-    font-size: 0.9em;
+    border: 1px solid var(--color5);
+    border-collapse: separate;
+    /* quita espacio entre bordes */
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    /* hace q el contenido respete el redondeado */
+    border-spacing: 0;
 }
+
+
+
+th,
+td {
+
+    border: 1px solid var(--color5);
+    text-align: left;
+    padding: 10px;
+    border-radius: 0px;
+
+}
+
+caption {
+
+    color: var(--color5);
+    font-weight: bold;
+    /* estilo negrita */
+    margin-bottom: 20px;
+    text-align: left;
+    /* aliniacion ala izquierda */
+    font-size: 1.2em;
+    /* agranda la letra */
+}
+
+thead,
+tfoot {
+
+    background: var(--color7);
+
+}
+
+tfoot td {
+
+    text-align: right;
+    font-style: italic;
+    /* Estilo recursivo */
+
+}
+
+/* Bordes redondeados en las esquinas de las tablas */
+
+table tr:first-child th:first-child {
+
+    border-top-left-radius: 10px;
+
+}
+
+table tr:first-child th:last-child {
+
+    border-top-right-radius: 10px;
+
+}
+
+table tr:last-child td:first-child {
+
+    border-bottom-left-radius: 10px;
+
+}
+
+table tr:last-child td:last-child {
+
+    border-bottom-right-radius: 10px;
+
+}
+
 
 #cabecera {
     background-color: var(--color2);
@@ -75,8 +151,8 @@ body {
 }
 
 #nosotros {
-    background-color: var(--color1);
-    color: var(--color4);
+    background-color: var(--color3);
+    color: var(--color5);
 
 }
 
@@ -95,12 +171,15 @@ body {
     color: var(--color2);
 }
 
-#testimonios{
+#testimonios {
     background-color: var(--color3);
     color: var(--color5);
 }
 
-/* Selectores de tipo CLASS */
+#mapa-contacto {
+    padding: 20px 0;
+    /* Espaciado interno */
+}
 
 .contenedor {
     max-width: 75%;
@@ -118,9 +197,14 @@ body {
 }
 
 .ajustar-mapa {
-    max-width: 75%;
-    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    /*para evitar desbordes*/
+    margin-top: 20px;
+
 }
+
+
 
 .ajustar-video {
     width: 100%;
@@ -136,13 +220,13 @@ body {
     margin-bottom: 15px;
     font: inherit;
     outline: none;
-    border: 2px solid var(--color1);
+    border: 2px solid var(--color5);
 }
 
 .boton-enviar {
     margin-top: 20px;
-    background-color: var(--color1);
-    color: var(--color2);
+    background-color: var(--color3);
+    color: var(--color5);
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 30px;
@@ -153,54 +237,53 @@ body {
 }
 
 .enlace-privacidad {
-    color: var(--color1);
+    color: var(--color3);
     text-decoration: none;
 }
 
 .textarea-noresize {
     resize: none;
-    border-bottom: 3px solid var(--color4);
+    border-bottom: 3px solid var(--color7);
 }
 
-.fila {
-    display: flex;
-    /*activa flexbox*/
-    flex-direction: row;
-    /*alinea las cajas internas de izquierda a derecha*/
-    flex-wrap: wrap;
-    /* cambia de fila cuando se ha completado el ancho del contenedor*/
-    /*anula el padding-left y padding-right de la primera y útima columna respectivamente*/
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-input::placeholder, textarea::placeholder, select {
-    color: var(--color4);
+input::placeholder,
+textarea::placeholder,
+select {
+    color: var(--color5);
 }
 
 .galeria {
 
     display: flex;
+    /* Activa el flexbox */
     gap: 30px;
+    /* Espacio entre Items */
     justify-content: center;
     flex-wrap: wrap;
+    /* Permite q los items pasen a otra linea */
+    padding: 20px;
+
 }
 
 
 .item {
 
+    width: 340px;
+    background: var(--color8);
     text-align: center;
     width: 340px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
 
 }
 
 .item img {
 
     width: 100%;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 10px;
 }
 
@@ -208,29 +291,100 @@ input::placeholder, textarea::placeholder, select {
 
 .item:hover {
     transform: scale(1.05);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
 
 }
+
+
+
+
+
+/* Animacion da un efecto de latido  */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+/* BOTÓN SIMPLE CON ANIMACIÓN */
+.boton-adoptar {
+    /* Estilos base */
+    margin: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: var(--color3);
+    color: var(--color5);
+    border: none;
+    border-radius: 40px;
+    font-family: var(--fuente1);
+    font-weight: bold;
+    /* Texto en negrita */
+    cursor: pointer;
+    /* cambia el curso a una mano  */
+
+    /* Aplicando las animaciones */
+    animation:
+        pulse 2s infinite ease-in-out;
+    /* la animacion empiesa y termina suavemente */
+
+    /* Efecto hover para detener animación */
+    transition: all 0.3s;
+
+}
+
+.boton-adoptar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);
+    /* agrega una sombra amarilla  */
+}
+
+
 
 
 
 .ficha {
-
-    margin-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+    margin: 15px 0 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    /* Crea 2 columnas */
+    gap: 8px 12px;
+    /* Espacio entre filas y columnas */
+    align-items: center;
+    /* Alinea verticalmente */
 }
 
-.ficha td {
-    padding: 4px 0;
-    vertical-align: top;
+.ficha li {
+    display: contents;
+    /* Elimina el "li" como contenedor */
 }
 
-.ficha .etiqueta {
-    width: 80px;
-    text-align: right;
-    padding-right: 6px;
+.ficha strong {
     font-weight: bold;
+    color: #333;
+    text-align: right;
+    /* Alinea los títulos a la derecha */
+    min-width: 80px;
+    /* Ancho mínimo para alinear */
+}
+
+.ficha span {
+    color: #555;
+}
+
+
+
+#cabecera {
+    background-color: var(--color2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    padding: 10px;
 }
 
 .fijar-cabecera {
@@ -249,11 +403,11 @@ input::placeholder, textarea::placeholder, select {
     width: 100%;
 }
 
-.bs-center{
+.bs-center {
     justify-content: space-between;
 }
 
-.bs-link{
+.bs-link {
     margin-right: 10px;
     color: var(--color2);
     text-decoration: none;
@@ -330,7 +484,7 @@ input::placeholder, textarea::placeholder, select {
     color: var(--color2);
 }
 
-.scroll-up{
+.scroll-up {
     /*Posiciona el boton en la parte inferior derecha de la ventana (viewport)*/
     position: fixed;
     bottom: 30px;
