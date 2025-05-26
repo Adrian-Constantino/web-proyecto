@@ -303,8 +303,6 @@ select {
 
 
 
-
-
 /* Animacion da un efecto de latido  */
 @keyframes pulse {
     0% {
@@ -329,25 +327,13 @@ select {
     border: none;
     border-radius: 40px;
     font-family: var(--fuente1);
-    font-weight: bold;
-    /* Texto en negrita */
-    cursor: pointer;
-    /* cambia el curso a una mano  */
+    cursor: pointer; /* cambia el curso a una mano  */
+    font-weight: bold; /* Texto en negrita */
 
     /* Aplicando las animaciones */
     animation:
-        pulse 2s infinite ease-in-out;
-    /* la animacion empiesa y termina suavemente */
-    font-weight: bold;
-    /* Texto en negrita */
-    cursor: pointer;
-    /* cambia el curso a una mano  */
-
-    /* Aplicando las animaciones */
-    animation:
-        pulse 2s infinite ease-in-out;
-    /* la animacion empiesa y termina suavemente */
-
+    pulse 2s infinite ease-in-out; /* la animacion empiesa y termina suavemente */
+    
     /* Efecto hover para detener animación */
     transition: all 0.3s;
 
@@ -355,19 +341,9 @@ select {
 
 .boton-adoptar:hover {
     transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);
-    /* agrega una sombra amarilla  */
+    box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);/* agrega una sombra amarilla  */
+    
 }
-
-
-.boton-adoptar:hover {
-    transform: scale(1.05);
-    box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);
-    /* agrega una sombra suave amarilla */
-}
-
-
-
 
 
 .ficha {
@@ -375,12 +351,9 @@ select {
     padding: 0;
     margin: 15px 0 0 0;
     display: grid;
-    grid-template-columns: repeat(2, max-content);
-    /* Crea 2 columnas */
-    gap: 8px 12px;
-    /* Espacio entre filas y columnas */
-    align-items: center;
-    /* Alinea verticalmente */
+    grid-template-columns: repeat(2, max-content); /* Crea 2 columnas */
+    gap: 8px 12px; /* Espacio entre filas y columnas */
+    align-items: center; /* Alinea verticalmente */
 }
 
 .ficha li {
