@@ -263,12 +263,17 @@ select {
     /* Permite q los items pasen a otra linea */
     padding: 20px;
 
+    flex-wrap: wrap;
+    /* Permite q los items pasen a otra linea */
+    padding: 20px;
+
 }
 
 
 .item {
 
     width: 340px;
+    background: var(--color8);
     background: var(--color8);
     text-align: center;
     width: 340px;
@@ -292,6 +297,7 @@ select {
 .item:hover {
     transform: scale(1.05);
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15);
+
 
 }
 
@@ -332,6 +338,15 @@ select {
     animation:
         pulse 2s infinite ease-in-out;
     /* la animacion empiesa y termina suavemente */
+    font-weight: bold;
+    /* Texto en negrita */
+    cursor: pointer;
+    /* cambia el curso a una mano  */
+
+    /* Aplicando las animaciones */
+    animation:
+        pulse 2s infinite ease-in-out;
+    /* la animacion empiesa y termina suavemente */
 
     /* Efecto hover para detener animación */
     transition: all 0.3s;
@@ -342,6 +357,13 @@ select {
     transform: scale(1.05);
     box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);
     /* agrega una sombra amarilla  */
+}
+
+
+.boton-adoptar:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(247, 234, 61, 0.905);
+    /* agrega una sombra suave amarilla */
 }
 
 
