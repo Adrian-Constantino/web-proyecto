@@ -2,34 +2,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oraganización de rescate de animales</title>
+    <!-- Enlazar el HTML con la hoja de estilos externa CSS -->
     <link rel="stylesheet" type="text/css" href="asstes/css/styles.css">
+    <!-- Enlazar el HTML con el favicon     -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-
-
+    <!-- Barra superior -->
+    <header id="barra-superior">
+        <div class="contenedor">
+            <div class="fila bs-center">
+                <div class="bs-contacto">
+                    <a class="bs-link"
+                        href="https://www.google.com/maps/dir//Refugio+Huella+Viva+P4PC%2B34V+Av.+Guadulfo+Silva+Lima+15823/@-12.2641264,-76.8851142,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0x9105bd0015e37501:0xa2534e337eedffe0!2m2!1d-76.8797069!2d-12.2647554?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D"
+                        target="_blank">
+                        <i class="fa-solid fa-location-dot fa-lg"></i>
+                        Av. Guadulfo Silva, Lima 15823
+                    </a>
+                    <a class="bs-link" href="mailto:contacto@huellasvivas.org" target="_blank">
+                        <i class="fa-solid fa-envelope fa-lg"></i>
+                        contacto@huellasvivas.org
+                    </a>
+                    <a class="bs-link" href="tel:+51999888777" target="_blank">
+                        <i class="fa-solid fa-phone fa-lg"></i>
+                        (+51) 999-888-777
+                    </a>
+                </div>
+                <div class="bs-rs">
+                    <a class="bs-link" href="https://www.facebook.com/" target="_blank" title="Síguenos en Facebook">
+                        <i class="fa-brands fa-facebook fa-lg"></i>
+                    </a>
+                    <a class="bs-link" href="https://www.tiktok.com/es-419/" target="_blank" title="Síguenos en TikTok">
+                        <i class="fa-brands fa-tiktok fa-lg"></i>
+                    </a>
+                    <a class="bs-link" href="https://www.instagram.com/" target="_blank" title="Síguenos en Instagram">
+                        <i class="fa-brands fa-instagram fa-lg"></i>
+                    </a>
+                    <a class="bs-link" href="https://x.com/home" target="_blank" title="Síguenos en X">
+                        <i class="fa-brands fa-square-x-twitter fa-lg"></i>
+                    </a>
+                    <a class="bs-link" href="https://www.youtube.com" target="_blank"
+                        title="Suscribete a nuestro canal">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Cabecera -->
     <header id="cabecera">
         <div class="cabecera-contenido">
-          <div class="logo-nombre">
-            <img src="asstes/img/logo.jpeg" alt="Logo" class="logo-header">
-            <span class="nombre-header">Refugio Huellas Vivas</span>
-          </div>
-          <nav class="menu-header">
-            <a href="#nosotros">Nosotros</a>
-            <a href="#logros">Logros</a>
-            <a href="#adopcion">Adopción</a>
-            <a href="#contacto">Contacto</a>
-          </nav>
+            <div class="logo-nombre">
+                <img src="asstes/img/logo.jpeg" alt="Logo" class="logo-header">
+                <span class="nombre-header">Refugio Huellas Vivas</span>
+            </div>
+            <nav class="menu-header">
+                <a href="index.html">Inicio</a>
+                <a href="asstes/pages/Nosotros.html">Nosotros</a>
+                <a href="asstes/pages/Logros.html">Logros</a>
+                <a href="asstes/pages/Adopcion.html">Adopción</a>
+                <a href="asstes/pages/Contacto.html">Contacto</a>
+            </nav>
         </div>
-      </header>
-
+    </header>
+    <!-- Contenido Principal -->
     <main>
         <section id="objeto-video">
             <video class="ajustar-video" autoplay muted loop>
                 <source src="asstes/video/video animal 2.mp4" type="video/mp4">
             </video>
         </section>
-
+        <!-- Seccion nosotros -->
         <section id="nosotros" class="espaciado">
             <div class="contenedor">
                 <h2>¿Quiénes Somos?</h2>
@@ -45,7 +89,7 @@
                     llenas de gratitud nos recuerdan que vale la pena cada esfuerzo.
                     Porque creemos en un mundo más compasivo, donde todas las vidas cuenten.</p>
             </div>
-
+            <!-- Seccion de logros -->
         </section>
         <section id="logros" class="espaciado">
             <div class="contenedor">
@@ -67,7 +111,7 @@
 
             </div>
         </section>
-
+        <!-- Seccion de adopcion -->
         <section id="adopcion" class="espaciado">
 
             <div class="contenedor">
@@ -154,7 +198,7 @@
             </div>
 
         </section>
-        
+        <!-- Seccion de testimonios -->
         <section id="testimonios" class="espaciado">
             <div class="contenedor">
                 <h2>Testimonios de nuestros clientes</h2>
@@ -174,9 +218,8 @@
             </div>
         </section>
 
-
-
-        <section >
+        <!-- Seccion del mapa -->
+        <section>
             <div class="ajustar-mapa">
                 <h2>Visítanos</h2>
                 <iframe
@@ -186,7 +229,7 @@
             </div>
 
         </section>
-
+        <!-- Seccion del formulario  -->
         <section id="formulario-contacto" class="espaciado">
             <div class="contenedor">
                 <h2>Formulario para contactarnos </h2>
@@ -224,7 +267,7 @@
 
 
     </main>
-
+    <!-- Pie de pagina -->
     <footer id="pie" class="espaciado">
         <div class="info-contacto-footer">
             <h3>Información de contacto</h3>
@@ -239,7 +282,10 @@
         </div>
 
     </footer>
-
+    <!--Enlace para ir rápidamente al inicio de la página-->
+    <a class="scroll-up" href="#">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
 </body>
 
 </html>
