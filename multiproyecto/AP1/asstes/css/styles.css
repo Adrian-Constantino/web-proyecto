@@ -150,6 +150,14 @@ table tr:last-child td:last-child {
     z-index: 1000;
 }
 
+#barra-superior {
+    background-color: var(--color5);
+    color: var(--color2);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 0.9em;
+}
+
 #nosotros {
     background-color: var(--color3);
     color: var(--color5);
@@ -308,6 +316,18 @@ table tr:last-child td:last-child {
 .textarea-noresize {
     resize: none;
     border-bottom: 3px solid var(--color7);
+}
+
+.fila {
+    display: flex;
+    /*activa flexbox*/
+    flex-direction: row;
+    /*alinea las cajas internas de izquierda a derecha*/
+    flex-wrap: wrap;
+    /* cambia de fila cuando se ha completado el ancho del contenedor*/
+    /*anula el padding-left y padding-right de la primera y útima columna respectivamente*/
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 input::placeholder,
