@@ -177,6 +177,7 @@ table tr:last-child td:last-child {
 #pie {
     background-color: var(--color5);
     color: var(--color2);
+    
 }
 
 /* Estilo general del fondo de la sección de testimonios */
@@ -256,6 +257,7 @@ table tr:last-child td:last-child {
 .contenedor {
     max-width: 75%;
     margin: auto;
+    
 }
 
 .espaciado {
@@ -332,6 +334,7 @@ table tr:last-child td:last-child {
 
 input::placeholder,
 textarea::placeholder,
+
 select {
     color: var(--color5);
 }
@@ -527,7 +530,7 @@ select {
 }
 
 .menu-header a:hover {
-    color: var(--color1);
+    color: var(--color3);
 }
 
 .menu-header a::after {
@@ -535,7 +538,7 @@ select {
     position: absolute;
     height: 2px;
     width: 0;
-    background-color: var(--color1);
+    background-color: var(--color3);
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -555,7 +558,7 @@ select {
 .info-contacto-footer h3 {
     font-size: 20px;
     margin-bottom: 15px;
-    color: var(--color1);
+    color: var(--color3);
 }
 
 .info-contacto-footer p {
@@ -577,4 +580,8 @@ select {
     color: var(--color5);
     border: 1px solid var(--color4);
 
+}
+
+.contfooter{
+    text-align: justify;
 }
