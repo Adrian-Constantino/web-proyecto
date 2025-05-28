@@ -333,12 +333,10 @@ table tr:last-child td:last-child {
 }
 
 .fila {
-    display: flex;
-    /*activa flexbox*/
-    flex-direction: row;
-    /*alinea las cajas internas de izquierda a derecha*/
-    flex-wrap: wrap;
-    /* cambia de fila cuando se ha completado el ancho del contenedor*/
+    display: flex; /*activa flexbox*/
+    flex-direction: row; /*alinea las cajas internas de izquierda a derecha*/
+    flex-wrap: wrap;/* cambia de fila cuando se ha completado el ancho del contenedor*/
+
     /*anula el padding-left y padding-right de la primera y útima columna respectivamente*/
     margin-left: -15px;
     margin-right: -15px;
@@ -353,19 +351,11 @@ select {
 
 .galeria {
 
-    display: flex;
-    /* Activa el flexbox */
-    gap: 30px;
-    /* Espacio entre Items */
+    display: flex; /* Activa el flexbox */
+    gap: 30px;  /* Espacio entre Items */
     justify-content: center;
-    flex-wrap: wrap;
-    /* Permite q los items pasen a otra linea */
+    flex-wrap: wrap; /* Permite q los items pasen a otra linea */
     padding: 20px;
-
-    flex-wrap: wrap;
-    /* Permite q los items pasen a otra linea */
-    padding: 20px;
-
 }
 
 
@@ -373,9 +363,7 @@ select {
 
     width: 340px;
     background: var(--color8);
-    background: var(--color8);
     text-align: center;
-    width: 340px;
     height: auto;
     border-radius: 10px;
     transition: transform 0.3s ease;
