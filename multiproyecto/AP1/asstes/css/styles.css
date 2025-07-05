@@ -12,12 +12,10 @@
     --fuente2: "Oswald", sans-serif;
     --fuente3: "Quicksand", sans-serif;
     /* Variables para la paleta de colores */
-    --color1: #16f953;
     --color2: #fff;
     --color3: #e2c4b1;
     --color4: #7e600b;
     --color5: #3D3D3D;
-    --color6: #356c43;
     --color7: #e2cdbf;
     --color8: #f6f2f2f3;
 }
@@ -156,7 +154,7 @@ table tr:last-child td:last-child {
 #cabecera {
     background-color: var(--color2);
     color: var(--color3);
-    padding: 10px 40px;
+    padding: 5px 10px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -273,8 +271,15 @@ table tr:last-child td:last-child {
 }
 
 .espaciado {
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.espaciado-footer{
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+
 }
 
 .ajustar-img {
@@ -466,7 +471,7 @@ select {
 #cabecera {
     background-color: var(--color2);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-    padding: 10px;
+    padding: 1px;
 }
 
 .fijar-cabecera {
@@ -474,15 +479,6 @@ select {
     top: 0;
     left: 0;
     z-index: 100;
-}
-
-.cabecera-contenido {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 .bs-center {
@@ -500,11 +496,11 @@ select {
 .logo-nombre {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
 }
 
 .logo-header {
-    width: 120px;
+    width: 90px;
     height: auto;
 }
 
@@ -516,7 +512,50 @@ select {
     font-family: var(--fuente2);
 }
 
-.menu-header {
+
+.nav-barra{
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+}
+
+.menu{
+
+    list-style-type: none; /* quita las viñetas */
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+
+.menu-item{
+
+    margin-left: 10px;
+
+}
+
+.menu-link{
+
+    color: var(--color5);
+    text-decoration: none; /* quita el subrayado */
+    padding: 10px;
+    transition: all 0.4s ease-in-out;
+
+}
+
+.menu-link:hover{
+
+    background-color: var(--color3);
+    color: var(--color2);
+
+}
+
+/* .menu-header {
     display: flex;
     gap: 30px;
 }
@@ -548,7 +587,7 @@ select {
 
 .menu-header a:hover::after {
     width: 60%;
-}
+} */
 
 .info-contacto-footer {
     margin-bottom: 30px;
