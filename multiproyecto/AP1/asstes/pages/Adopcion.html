@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,39 +52,205 @@
             </div>
         </div>
     </header>
+
     <!-- Cabecera -->
     <header id="cabecera">
-        <div class="cabecera-contenido">
-            <div class="logo-nombre">
-                <img src="../img/logo.jpeg" alt="Logo" class="logo-header">
-                <span class="nombre-header">Refugio Huellas Vivas</span>
-            </div>
-            <nav class="menu-header">
-                <a href="../../index.html">Inicio</a>
-                <a href="Nosotros.html">Nosotros</a>
-                <a href="Logros.html">Logros</a>
-                <a href="Adopcion.html">Adopción</a>
-                <a href="Contacto.html">Contacto</a>
+        <div class="contenedor">
+            <nav class="nav-barra">
+                <div class="logo-nombre">
+                    <img class="logo-header" src="../img/logo.jpeg" alt="Logo">
+                </div>
+
+                <!-- Icono para activar el menu tipo hamburguesa -->
+
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Logros.html">Logros</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Adopcion.html">Adopción</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Seccion de adopcion -->
+        <section id="adopcion" class="espaciado">
 
-    <!-- Pie de pagina -->
-    <footer id="pie" class="espaciado">
-        <div class="info-contacto-footer">
-            <h3>Información de contacto</h3>
-            <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
-            <p><strong>Teléfono:</strong> +51 999 888 777</p>
-            <p><strong>Email:</strong> contacto@huellasvivas.org</p>
-        </div>
-        <div class="contenedor">
-            <span>
-                &copy; 2025 Rescate de animales - Todos los derechos reservados.
-            </span>
-        </div>
 
+            <div class="contenedor">
+                <h2>Animales en Adopcion</h2>
+            </div>
+            <div class="galeria">
+
+                <div class="item">
+                    <img src="../img/gato.png" alt="gato1">
+                    <h3>Mishi</h3>
+                    <p>Tranquilo y cariñoso, ideal para hogares con niños.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/gato2.png" alt="gato2">
+                    <h3>Arya</h3>
+                    <p>Curiosa y juguetona, le encanta explorar nuevos lugares.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/perrito.png" alt="perrito">
+                    <h3>Toby</h3>
+                    <p>Activo y alegre, siempre listo para una aventura.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/buldog.jpg" alt="buldog">
+                    <h3>Rocky</h3>
+                    <p>Fuerte y protector, pero muy tierno con su familia.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/simba.png" alt="Cachorro Simba">
+                    <h3>Simba</h3>
+                    <p>Juguetón y protector, siempre está alerta y activo.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/luna.png" alt="Gata Luna">
+                    <h3>Luna</h3>
+                    <p>Cariñosa y tranquila, perfecta para ambientes relajados.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/max.png" alt="Perro Max">
+                    <h3>Max</h3>
+                    <p>Fiel y obediente, ideal para familias activas.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+
+                <div class="item">
+                    <img src="../img/mimi.png" alt="Gatita Mimi">
+                    <h3>Mimi</h3>
+                    <p>Juguetona y curiosa, siempre está buscando diversión.</p>
+                    <button class="boton-adoptar">Adoptar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="espaciado">
+
+            <div class="contenedor">
+                <h2>Cuidado y bienestar animal</h2>
+
+                <table>
+                    <caption>Lista de precios</caption>
+
+                    <thead>
+                        <tr>
+                            <th>Servicio</th>
+                            <th>Descripcion</th>
+                            <th>Costo</th>
+                        </tr>
+                    </thead>
+
+                    <!-- Cuerpo de la tabla  -->
+
+                    <tbody>
+
+                        <tr>
+                            <td>Esterilización</td>
+                            <td>Para perros y gatos</td>
+                            <td>S/90.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Vacunacion</td>
+                            <td>Incluye triple y antirrabica</td>
+                            <td>S/50.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Baño y Peluqueria</td>
+                            <td>Solo fines de semana</td>
+                            <td>S/40.00</td>
+                        </tr>
+
+                        <tr>
+                            <td>Visita medica general</td>
+                            <td>Evaluacion veterinaria completa</td>
+                            <td>S/80.00</td>
+                        </tr>
+                        <tr>
+                            <td>Consulta nutrimental</td>
+                            <td>Asesoría especializada en alimentación y dieta (Según necesidad)</td>
+                            <td>S/60.00</td>
+                        </tr>
+                        <tr>
+                            <td>Desparasitación</td>
+                            <td>Tratamiento para prevenir y eliminar parásitos internos y externos (Semestral)</td>
+                            <td>S/30.00</td>
+                        </tr>
+
+                    </tbody>
+
+                    <!-- Pie de tabla -->
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Válido hasta junio 2025. Sujeto a cambios.</td>
+                        </tr>
+
+
+                    </tfoot>
+
+                </table>
+
+            </div>
+
+
+        </section>
+
+
+   <!-- Pie de pagina -->
+    <footer id="pie" class="espaciado-footer">
+        <div class="container">
+            <div class="info-contacto-footer">
+                <h3>Información de contacto</h3>
+                <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
+                <p><strong>Teléfono:</strong> +51 999 888 777</p>
+                <p><strong>Email:</strong> contacto@huellasvivas.org</p>
+            </div>
+            <div class="contfooter">
+                <span>
+                    &copy; 2025 Rescate de animales - Todos los derechos reservados.
+                </span>
+            </div>
+        </div>
     </footer>
+    
     <!--Enlace para ir rápidamente al inicio de la página-->
     <a class="scroll-up" href="#">
         <i class="fa-solid fa-angle-up"></i>

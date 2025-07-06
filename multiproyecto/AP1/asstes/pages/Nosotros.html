@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -50,43 +52,80 @@
             </div>
         </div>
     </header>
+
     <!-- Cabecera -->
     <header id="cabecera">
-        <div class="cabecera-contenido">
-            <div class="logo-nombre">
-                <img src="../img/logo.jpeg" alt="Logo" class="logo-header">
-                <span class="nombre-header">Refugio Huellas Vivas</span>
-            </div>
-            <nav class="menu-header">
-                <a href="../../index.html">Inicio</a>
-                <a href="Nosotros.html">Nosotros</a>
-                <a href="Logros.html">Logros</a>
-                <a href="Adopcion.html">Adopción</a>
-                <a href="Contacto.html">Contacto</a>
+        <div class="contenedor">
+            <nav class="nav-barra">
+                <div class="logo-nombre">
+                    <img class="logo-header" src="../img/logo.jpeg" alt="Logo">
+                </div>
+
+                <!-- Icono para activar el menu tipo hamburguesa -->
+
+                <div class="menu-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <ul class="menu">
+                    <li class="menu-item">
+                        <a class="menu-link" href="../../index.html">Inicio</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Nosotros.html">Nosotros</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Logros.html">Logros</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Adopcion.html">Adopción</a>
+                    </li>
+
+                    <li class="menu-item">
+                        <a class="menu-link" href="../pages/Contacto.html">Contacto</a>
+                    </li>
+                </ul>
             </nav>
         </div>
     </header>
 
+    <!-- Seccion nosotros -->
+        <section id="nosotros" class="espaciado">
+            <div class="contenedor">
+                <h2>¿Quiénes Somos?</h2>
+                <p>Somos una organización sin fines de lucro dedicada al rescate,
+                    cuidado y reubicación de animales en situación de abandono, maltrato o vulnerabilidad.
+                    Nuestro refugio nace del amor por los animales y del profundo deseo de darles una segunda oportunidad.
+                    Cada huella que llega a nosotros tiene una historia, y nuestro compromiso es ofrecerles un espacio seguro donde puedan sanar física y emocionalmente. 
+                    Con el apoyo de voluntarios, donantes y adoptantes responsables, trabajamos día a día para cambiar el destino de quienes no tienen voz. 
+                    Ayudamos a los animales porque ellos también merecen amor, respeto y un hogar, porque sus miradas llenas de gratitud nos recuerdan que vale la pena cada esfuerzo,
+                     y porque creemos en un mundo más compasivo, donde todas las vidas cuenten.</p>
+            </div>
+        </section>
 
     <!-- Pie de pagina -->
-    <footer id="pie" class="espaciado">
-        <div class="info-contacto-footer">
-            <h3>Información de contacto</h3>
-            <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
-            <p><strong>Teléfono:</strong> +51 999 888 777</p>
-            <p><strong>Email:</strong> contacto@huellasvivas.org</p>
+    <footer id="pie" class="espaciado-footer">
+        <div class="container">
+            <div class="info-contacto-footer">
+                <h3>Información de contacto</h3>
+                <p><strong>Horario de atención:</strong> Lunes a Viernes, 9:00 a.m. - 6:00 p.m.</p>
+                <p><strong>Teléfono:</strong> +51 999 888 777</p>
+                <p><strong>Email:</strong> contacto@huellasvivas.org</p>
+            </div>
+            <div class="contfooter">
+                <span>
+                    &copy; 2025 Rescate de animales - Todos los derechos reservados.
+                </span>
+            </div>
         </div>
-        <div class="contenedor">
-            <span>
-                &copy; 2025 Rescate de animales - Todos los derechos reservados.
-            </span>
-        </div>
-
     </footer>
+
     <!--Enlace para ir rápidamente al inicio de la página-->
     <a class="scroll-up" href="#">
         <i class="fa-solid fa-angle-up"></i>
     </a>
 </body>
-
 </html>

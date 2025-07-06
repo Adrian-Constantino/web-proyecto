@@ -60,7 +60,8 @@ p {
 }
 
 img,
-iframe {
+iframe,
+video {
 
     display: block;
 
