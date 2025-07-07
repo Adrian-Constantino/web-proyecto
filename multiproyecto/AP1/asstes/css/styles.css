@@ -561,6 +561,13 @@ text-align: center;
 
 }
 
+/* Estilo para el botón hamburguesa */
+.menu-toggle {
+    font-size: 2em; /* 32 pixeles */
+    cursor: pointer;
+    display: none; /* Oculta el botón inicialmente */
+}
+
 /* .menu-header {
     display: flex;
     gap: 30px;
@@ -637,4 +644,29 @@ text-align: center;
     margin: 0 auto;
     padding: 0 20px;
     box-sizing: border-box;
+}
+
+/* --------------------------------------------------------
+    Estilos responsive para adaptar el contenido de la
+    página para dispositivos móviles y pantallas intermedias
+------------------------------------------------------------*/
+/* Para pantallas grandes (más de 1200px) */
+@media screen and (max-width:1200px) {
+    .contenedor{
+        max-width: 1140px;
+    }
+   
+}
+
+/* Para tabletas en orientación horizontal /
+   pantallas medianas (hasta 992px) */
+@media screen and (max-width:992px) {
+    .contenedor{
+        max-width: 90%;
+    }
+    .espaciado {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    
 }
