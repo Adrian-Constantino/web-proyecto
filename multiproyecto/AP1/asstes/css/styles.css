@@ -494,6 +494,11 @@ select {
 
 }
 
+.bs-rs i{
+font-size: 19px;
+text-align: center;
+}
+
 .logo-nombre {
     display: flex;
     align-items: center;
