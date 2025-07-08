@@ -401,8 +401,19 @@
 
     </footer>
     <!--Enlace para ir rápidamente al inicio de la página-->
-    <a class="scroll-up" href="#">
+    <a class="scroll-up" id="scrollUpBtn" href="#">
         <i class="fa-solid fa-angle-up"></i>
     </a>
+    <script>
+    const scrollUpBtn = document.getElementById('scrollUpBtn');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 400) {
+        scrollUpBtn.style.display = 'block';
+    } else {
+        scrollUpBtn.style.display = 'none';
+    }
+        });
+    </script>
+
 </body>
 </html>
