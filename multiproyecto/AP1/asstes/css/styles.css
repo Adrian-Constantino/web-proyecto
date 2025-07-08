@@ -13,9 +13,9 @@
     --fuente3: "Quicksand", sans-serif;
     /* Variables para la paleta de colores */
     --color2: #fff;
-    --color3: #e2c4b1;
+    --color3: #fff3e7;
     --color4: #7e600b;
-    --color5: #3D3D3D;
+    --color5: #262626;
     --color7: #e2cdbf;
     --color8: #f6f2f2f3;
 }
@@ -415,7 +415,7 @@ select {
     padding-bottom: 10px;
     padding-left: 30px;
     padding-right: 30px;
-    background: var(--color3);
+    background: var(--color7);
     color: var(--color5);
     border: none;
     border-radius: 40px;
@@ -697,6 +697,12 @@ text-align: center;
     .contenedor {
         max-width: 95%;
     }
+
+    .form-campo {
+        width: 100%;
+    }
+
+    
 }
 
 /* Mobile (<=576px) */
